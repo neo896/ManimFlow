@@ -1,6 +1,6 @@
 import React from "react";
 import { Handle, Position } from "reactflow";
-import { FadeInSvg } from "@/components/svg";
+import { FadeInSvg } from "@/src/components/svg";
 
 const FadeInNode = () => {
   return (

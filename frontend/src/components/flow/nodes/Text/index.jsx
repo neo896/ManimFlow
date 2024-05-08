@@ -1,6 +1,6 @@
 import React from "react";
 import { Handle, Position } from "reactflow";
-import { TextSvg } from "@/components/svg";
+import { TextSvg } from "@/src/components/svg";
 
 const TextNode = () => {
   return (

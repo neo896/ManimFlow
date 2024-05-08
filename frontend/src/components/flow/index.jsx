@@ -7,13 +7,15 @@ import {
   onEdgesChange,
   onConnect,
   setNodes,
-} from "@/stores/index";
+} from "@/src/stores/index";
 import { IconPlay, IconSave } from "@douyinfe/semi-icons";
 import { Button } from "@douyinfe/semi-ui";
 import { RectangleNode, TextNode, FadeInNode } from "./nodes";
 import nodesProps from "./nodes/data";
-
 import { v4 as uuidv4 } from "uuid";
+
+import { SaveScene } from "@/wailsjs/go/main/App.js"
+
 import "reactflow/dist/style.css";
 
 const nodes = {
@@ -40,6 +42,7 @@ const Flow = () => {
     if (reactFlowInstance) {
       const flow = reactFlowInstance.toObject();
       let nodesJson = JSON.stringify(flow);
+        SaveScene(nodesJson)
     }
   }, [reactFlowInstance]);
 

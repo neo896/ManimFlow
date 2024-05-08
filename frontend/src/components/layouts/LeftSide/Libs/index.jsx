@@ -7,7 +7,7 @@ import {
   FadeOutSvg,
   CreateSvg,
   UnCreateSvg,
-} from "@/components/svg/index";
+} from "@/src/components/svg/index";
 
 const Mobjects = [
   {

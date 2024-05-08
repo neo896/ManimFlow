@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Handle, Position } from "reactflow";
 import { ColorPicker } from "antd";
 import { InputNumber, Divider } from "@douyinfe/semi-ui";
-import { RectangleSvg } from "@/components/svg";
-import { updateNodeData } from "@/stores/index";
+import { RectangleSvg } from "@/src/components/svg";
+import { updateNodeData } from "@/src/stores/index";
 
 const RectangleNode = ({ data }) => {
   const [color, setColor] = useState(data.props.color);
