@@ -1,0 +1,12 @@
+from manim import *
+
+class Scenario(Scene):
+    def construct(self):
+    {{range .Nodes}}
+        {{if (eq .Type "RectangleNode")}}
+        {{.Type}}_{{.ID}} = Rectangle()
+        {{end}}
+        {{range .Edges}}
+        xxx
+        {{end}}
+    {{end}}
